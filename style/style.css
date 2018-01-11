@@ -1,0 +1,211 @@
+.txt1 { text-decoration:none;font-family:Helvetica, Arial;color:#000000; font-size : 20px}
+A.txt1:link, A.txt1:visited, A.txt1:active { text-decoration:underline; font-weight : bold}
+
+.txt11 { text-decoration:none;font-family:Helvetica, Arial;color:#000000; font-size : 40px}
+A.txt11:link, A.txt11:visited, A.txt11:active { text-decoration:underline; font-weight : bold}
+
+
+.txt2 { text-decoration:none;font-family:Helvetica, Arial;color:#FFFFFF; font-size : 20px; font-weight : bold}
+
+A.txt2:link, A.txt2:visited, A.txt2:active {font-weight : bold}
+
+
+.txt22 { text-decoration:none;font-family:Helvetica, Arial;color:#FFFFFF; font-size : 10px; font-weight : bold}
+
+A.txt22:link, A.txt22:visited, A.txt22:active {font-weight : bold}
+
+
+.txt23 { text-decoration:none;font-family:Helvetica, Arial;color:#FFFFFF; font-size : 15px; font-weight : bold}
+
+A.txt23:link, A.txt23:visited, A.txt23:active {font-weight : bold}
+
+
+.txt3 { text-decoration:none;font-family:Helvetica, Arial;color:#2F5597; font-size : 10px}
+
+A.txt3:link, A.txt3:visited, A.txt3:active { text-decoration:underline; font-weight : bold}
+
+.txt31 { text-decoration:none;font-family:Helvetica, Arial;color:#2F5597; font-size : 30px}
+
+A.txt3:link, A.txt3:visited, A.txt3:active { text-decoration:underline; font-weight : bold}
+
+
+.txt4 { text-decoration:none;font-family:Helvetica, Arial;color:#c2c2c2; font-size : 20px; font-weight : bold}
+
+A.txt4:link, A.txt4:visited, A.txt4:active { text-decoration:underline; font-weight : bold}
+
+
+.txt42 { text-decoration:none;font-family:Helvetica, Arial;color:#c2c2c2; font-size : 15px}
+
+A.txt42:link, A.txt42:visited, A.txt42:active { text-decoration:underline; font-weight : bold}
+
+.txt43 { text-decoration:none;font-family:Helvetica, Arial;color:#2F5597; font-size : 20px; font-weight : bold}
+
+A.txt43:link, A.txt43:visited, A.txt43:active { text-decoration:underline; font-weight : bold}
+
+
+.txt5 { text-decoration:none;font-family:Helvetica, Arial;color:#848484; font-size : 15px}
+
+A.txt5:link, A.txt5:visited, A.txt5:active { text-decoration:underline; font-weight : bold}
+
+
+
+.txt6 { text-decoration:none;font-family:Helvetica, Arial;color:#000000; font-size : 15px}
+
+A.txt6:link, A.txt6:visited, A.txt6:active { text-decoration:underline; font-weight : bold}
+
+
+.txt7 { text-decoration:none;font-family:Helvetica, Arial;color:#000000; font-size : 15px}
+
+A.txt7:link, A.txt7:visited, A.txt7:active { text-decoration:underline; font-weight : bold}
+
+
+.txt8 { text-decoration:none;font-family:Helvetica, Arial;color:#2F5597; font-size : 15px}
+
+A.txt8:link, A.txt3:visited, A.txt3:active { text-decoration:underline; font-weight : bold}
+
+
+.txt9 { text-decoration:none;font-family:Helvetica, Arial;color:#c2c2c2; font-size : 10px; font-weight : bold}
+
+A.txt9:link, A.txt9:visited, A.txt9:active {font-weight : bold}
+
+
+.navbar-brand{
+	background-color: #2F5597;
+	}
+	
+.navbar-nav{
+background-color: #2F5597;
+}
+
+.navbar-header{
+background-color: #2F5597;
+}
+
+.container-fluid{
+background-color: #2F5597;
+}
+
+.navbar-inverse{
+background-color: #2F5597;
+}
+
+
+
+.BarreMenu{
+    background-color: #2F5597;
+    border: 0px;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.BarreSousMenu{
+    background-color: #B4C7E7;
+    border: 0px;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+
+.BarreFooter{
+    background-color: #F2F2F2;
+    border: 0px;
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.texteenrouge {
+    color: red;
+}
+
+.body {
+    background-color: #FFFFFF;
+	margin-top:10px;
+}
+
+.boutonbleu {
+	display:block;
+	width:130px;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	background:url(../images/boutonbleu.png) no-repeat;
+	color:white;
+	text-decoration:none;
+	font-size : 15px;
+	font-weight : bold;
+}
+
+.boutonbleu:hover {
+	background:url(../images/btnbleuciel.png) no-repeat;
+}
+
+.boutonbleulong {
+	display:block;
+	width:150px;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	background:url(../images/boutonbleulong.png) no-repeat;
+	color:white;
+	text-decoration:none;
+	font-size : 15px;
+	font-weight : bold;
+}
+
+.boutonbleulong:hover {
+	background:url(../images/btnbleuciellong.png) no-repeat;
+}
+
+
+.boutonbleulongplus {
+	display:block;
+	width:300px;
+	line-height:40px;
+	text-align:center;
+	vertical-align:middle;
+	background:url(../images/boutonbleulongplus.png) no-repeat;
+	color:white;
+	text-decoration:none;
+	font-size : 15px;
+	font-weight : bold;
+}
+
+.boutonbleulongplus:hover {
+	background:url(../images/btnbleuciellongplus.png) no-repeat;
+}
+
+.tr {
+	text-decoration:none;
+	font-family:Helvetica, Arial;
+	font-size : 10pxdisplay:block;
+	background-color:#F5F5F5;
+	text-align:center;
+	width:300px;
+}
+
+.tr:hover {
+	background-color:#c2c2c2;
+}
+
+.td {
+	text-decoration:none;
+	font-family:Helvetica, Arial;
+	font-size : 10pxdisplay:block;
+	background-color:#F5F5F5;
+	text-align:center;
+	width:200px;
+}
+
+.td:hover {
+	background-color:#c2c2c2;
+}
+
+.footer {
+	position: fixed;
+    bottom: 0;
+	width:100%;
+	margin:-10px;
+}
