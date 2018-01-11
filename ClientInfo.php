@@ -1,8 +1,8 @@
 <?php
 	include('session.php');
-        require("fonction.php");
-        include("header.php"); 
-        include("navbar.php");
+    require("fonction.php");
+    include("header.php");
+    include("navbar.php");
 
 ?>        
 
@@ -50,7 +50,7 @@
                         <div class="container">                   
                             <form method="post" action="ClientInfoModif.php" class="form-horizontal">                   
                                         <?php        			
-                                        //selection des champs civilite, nom et prenom afin d'afficher en haut de la page le nom de la personne connectée
+                                        //selection des champs civilite, nom et prenom afin d'afficher en haut de la page le nom de la personne connectï¿½e
                                         $sql= 	"SELECT
                                                         civilite,
                                                         nom,

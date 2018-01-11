@@ -1,9 +1,9 @@
 <?php
 
-	include("config.php");
-        require("fonction.php");
 	session_start();
-	   	
+	include("config.php");
+    require("fonction.php");
+
 	$error = "";
 
 	if($_SERVER["REQUEST_METHOD"] == "POST") 
@@ -23,23 +23,21 @@
 		$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 		
 		$count = mysqli_num_rows($result);
-		
+
+
       		// If result matched $myusername and $mypassword, table row must be 1 row
-		
-		if($count == 1) 
+
+		if($count == 1)
 		{
+		    $_SESSION['login_user'] = $myemail;
+            $_SESSION['user_id'] 	= $row['id_client'];
 
-                        $_SESSION['login_user'] = $myemail;
-
-        		$_SESSION['user_id'] 	= $row['id_client'];
-
-                        
-			header("location:ClientInfo.php");
+			header('Location: ClientInfo.php');
 		}
 		else
 		{
-			$error = "Votre identifiant ou votre mot de passe est invalide";			
-      		}
+			$error = "Votre identifiant ou votre mot de passe est invalide";
+		}
 		
    	}
 ?>
@@ -57,7 +55,7 @@
     include("header.php"); 
     include("navbar.php");
 ?>
-            <!--Center pour que le tableau soit centré-->
+            <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>

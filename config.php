@@ -1,6 +1,6 @@
 <?php
 
-	define('DB_SERVER', 'localhost');
+	define('DB_SERVER', 'localhost:3306'); // il faut définir le port
 	define('DB_USERNAME', 'root');
 	define('DB_PASSWORD', 'root');
 	define('DB_NAME', 'OlfatiBank');
@@ -11,7 +11,6 @@
 
 	if($db === false)
 	{
-
 		die("ERROR: Could not connect. " . mysqli_connect_error());
 	}
 

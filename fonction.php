@@ -1,7 +1,7 @@
 <?php               
         function executeQuery($sql) {
             // creation de la connection
-            $c = new mysqli("localhost", "root", "root", "olfatibank", 3306);
+            $c = new mysqli("localhost:3306", "root", "root", "olfatibank", 3306);
             if ($c->connect_errno) {
                 //si erreur de connection
                 return "Probleme d'acces a la base";
@@ -9,7 +9,7 @@
             $res = $c->query($sql);
             // fermeture connection
             $c->close();
-            //retour du résultat
+            //retour du rï¿½sultat
             return $res;
         }
         
@@ -111,7 +111,7 @@
 			for ( $i = 1; $i <= $count; $i++ ) 
 			{
 				
-				// Récupération de l'enregistrement i
+				// Rï¿½cupï¿½ration de l'enregistrement i
 				$row = $result->fetch_assoc();
 						
 				// Initialisation des variables
@@ -138,7 +138,7 @@
 					echo ("<h2 align='left'> Compte " . $type_compte . " N&deg;" . $id_compte . " </h2>" );
 				}
 
-				// Imprimer RIB et Relevé
+				// Imprimer RIB et Relevï¿½
 				if ($i == 1)
 				{
 					// Affichage des informations du compte
@@ -204,6 +204,4 @@
 			}				
 		}		
 	}
-		
-		 
-?>                 
+?>

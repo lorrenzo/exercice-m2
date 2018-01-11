@@ -1,6 +1,6 @@
 <?php
-	require('fonction.php');
 	session_start();
+	require('fonction.php');
 
 ?>        
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
          ?>
     <body class="body">
 
-            <!--Center pour que le tableau soit centré-->
+            <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>
