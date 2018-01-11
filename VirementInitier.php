@@ -1,4 +1,5 @@
 <?php
+    ob_start();
 	include('session.php');
         require("fonction.php");
         include("header.php"); 
@@ -29,7 +30,7 @@
                             $error="";
 
                             // ----------------------------------------------------------
-                            // Vérification Fonds suffisants
+                            // Vï¿½rification Fonds suffisants
 
                             //
                             $sql= 	"
@@ -89,7 +90,7 @@
                             }
 
                             // ----------------------------------------------------------
-                            // Vérification plafond virement non atteint
+                            // Vï¿½rification plafond virement non atteint
 
                             /*
                             //
@@ -146,7 +147,7 @@
 
 
                             // ----------------------------------------------------------
-                            // Enregistrement de l'operation dans le compte créditer
+                            // Enregistrement de l'operation dans le compte crï¿½diter
 
                             // -----
                             $sql="SELECT clients.nom,clients.prenom FROM comptes join clients on comptes.id_client=clients.id_client WHERE comptes.id_compte = '" . $cpt_debit . "'";
@@ -169,7 +170,7 @@
                             $result = executeQuery($sql);
 
                             // ----------------------------------------------------------
-                            // Enregistrement de l'opération dans le compte à débiter
+                            // Enregistrement de l'opï¿½ration dans le compte ï¿½ dï¿½biter
 
                             // -----
                             $sql="SELECT clients.nom,clients.prenom FROM comptes join clients on comptes.id_client=clients.id_client WHERE comptes.id_compte = '" . $cpt_credit . "'";
@@ -218,7 +219,7 @@
     </head>
     <body class="body">
 <br/>
-        <!--Center pour que le tableau soit centré-->
+        <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>

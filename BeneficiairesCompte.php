@@ -17,7 +17,7 @@
             if(isset($_POST['CptBeneficiaire'])? $_POST['CptBeneficiaire']:false){
 
                 
-                    // Vérifier que le beneficiaire n'existe pas deja
+                    // Vï¿½rifier que le beneficiaire n'existe pas deja
 
                     $sql= "SELECT
                                 beneficiaires.id_client,
@@ -53,7 +53,7 @@
                                 ('". $_SESSION['user_id'] ."','".$id_client_2."','".$_POST['CptBeneficiaire']."')";
 
                     executeQuery($sql);
-                    header("location:BeneficiaireConfirmer.php");
+                    header('Location: BeneficiaireConfirmer.php');
                     }
 
             }
@@ -74,7 +74,7 @@
 	<link rel="stylesheet" href="./style/style.css" type="text/css">
     </head>
     <body class="body">
-        <!--Center pour que le tableau soit centré-->
+        <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>

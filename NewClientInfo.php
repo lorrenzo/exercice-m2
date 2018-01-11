@@ -1,15 +1,15 @@
 <?php
+        session_start();
         require("fonction.php");
-        include("header.php"); 
+        include("header.php");
         include("navbar.php");
         require "config.php";
         $error="";
 
-        session_start();
 
         if($_SERVER["REQUEST_METHOD"] == "POST") 
 	{
-                //Vérifier que l'adresse email utilisee en identifiant n'est pas deja utilisee
+                //Vï¿½rifier que l'adresse email utilisee en identifiant n'est pas deja utilisee
             
 		$sql= " SELECT 
                             clients.email
@@ -32,7 +32,7 @@
                 else {
      
  		
-		// Créer le client
+		// Crï¿½er le client
 
 		$sql= 	" INSERT INTO clients 	(	
 							civilite,
@@ -70,7 +70,7 @@
 		
 			
 		// ----------------------------------------------------------
-		// Récupérer le id_client du client créé (AUTO_INCREMENT)
+		// Rï¿½cupï¿½rer le id_client du client crï¿½ï¿½ (AUTO_INCREMENT)
 
 		//
 		$sql= " SELECT 
@@ -104,25 +104,25 @@
 		}
                 
                 	// ----------------------------------------------------------
-                        // Créer les comptes selectionnés
+                        // Crï¿½er les comptes selectionnï¿½s
 
                         foreach($_POST['compte'] as $compte)
                         {
 
                                 $sql=	"
                                         INSERT INTO comptes 	(
-                                                                        id_agence,
-                                                                        id_client,
-                                                                        type_compte,
-                                                                        autorisation_decouvert
-                                                                ) 
-                                                                VALUES 
-                                                                ("
-                                                                        . $_POST['agence'] 	. ","
-                                                                        . $id_client 		. ","
-                                                                        . "'" .	$compte 	. "',
-                                                                         (SELECT autorisation_decouvert FROM type_compte WHERE type_compte = '" . $compte  ."')
-                                                                )
+                                                    id_agence,
+                                                    id_client,
+                                                    type_compte,
+                                                    autorisation_decouvert
+                                            ) 
+                                            VALUES 
+                                            ("
+                                                    . $_POST['agence'] 	. ","
+                                                    . $id_client 		. ","
+                                                    . "'" .	$compte 	. "',
+                                                     (SELECT autorisation_decouvert FROM type_compte WHERE type_compte = '" . $compte  ."')
+                                            )
                                         ";
 
 
@@ -150,7 +150,7 @@
 	<link rel="stylesheet" href="./style/style.css" type="text/css">
     </head>
     <body class="body">
-        <!--Center pour que le tableau soit centré-->
+        <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>
@@ -329,7 +329,7 @@
                                 <label class="control-label col-sm-4" for="agence">Choix de l'agence<b class="texteenrouge">*</b></label>
                                 <div class="col-sm-4">
                                      <?php
-                                        	//Requête et affichage de la liste des agences					//
+                                        	//Requï¿½te et affichage de la liste des agences					//
 						$sql= " SELECT
                                                             agences.id_agence,
                                                             agences.libelle 
@@ -379,7 +379,7 @@
                                 <label class="control-label col-sm-4" for="compte">Choix du type de compte</label>
                                 <div class="col-sm-4">
                                      <?php
-                                        	//Requête et affichage de la liste des comptes - CHQ est coche par defaut		
+                                        	//Requï¿½te et affichage de la liste des comptes - CHQ est coche par defaut		
 						$sql= " SELECT
                                                             type_compte,
                                                             libelle,

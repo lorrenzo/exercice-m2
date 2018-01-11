@@ -1,4 +1,5 @@
 <?php
+    ob_start();
 	include('session.php');
         require("fonction.php");
         include("header.php"); 
@@ -36,10 +37,11 @@
 		{
 		$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 	
-                        $id_client_2=$row['id_client'];
-                        $nom_2=$row['nom'];
-                        $prenom_2=$row['prenom'];
- 			header("location:BeneficiairesCompte.php?id_client=".$id_client_2."");
+            $id_client_2=$row['id_client'];
+            $nom_2=$row['nom'];
+            $prenom_2=$row['prenom'];
+
+            header('Location: BeneficiairesCompte.php?id_client='.$id_client_2);
 		}
 		else
 		{
@@ -57,7 +59,7 @@
 	<link rel="stylesheet" href="./style/style.css" type="text/css">
     </head>
     <body class="body">
-        <!--Center pour que le tableau soit centré-->
+        <!--Center pour que le tableau soit centrï¿½-->
         <center>
             <table bgcolor="white" width="1200" border="0" cellspacing="0" cellpadding="30" marginwidth="1200" marginheight="">
                 <tr>
